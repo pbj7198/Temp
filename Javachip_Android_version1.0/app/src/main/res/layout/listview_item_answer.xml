@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:textColor="#000000"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:id="@+id/tv_answer_info"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/tv_line_answer"
+        android:background="#FF5C6D"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="작성자 "
+        android:id="@+id/tv_answer_writer"
+       android:gravity="right" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/tv_line_answer2"
+        android:background="#AA424242"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

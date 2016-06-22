@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_ctitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@drawable/border"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:text="강의 단원"
+            android:textSize="20dp" />
+
+        <ScrollView
+
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/border3"
+            android:fillViewport="false">
+
+            <TextView
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/tv_cinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                 />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/bt_problem"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF5C6D"
+        android:text="PROBLEM"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bt_lecture"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bt_problem"
+        android:layout_marginRight="5dp"
+        android:background="#FF5C6D"
+        android:text="LECTURE"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/complieback"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <ScrollView
+        android:background="@drawable/border3"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="start"
+        android:layout_weight="0.65"
+        android:fillViewport="false">
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/et_content"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="start"
+
+
+
+            android:text="class Main{\n \t public static void main(String[] args){\n\n\n\n\t \t System.out.println();\n\n\n\n\n\n\n  \t}\n}" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_compile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="5dp"
+
+
+        android:layout_weight="1.7"
+        android:background="#FF5C6D"
+        android:text="COMPILE"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:background="@drawable/border3"
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1.5"
+        android:padding="10dp"
+        android:text="결과 값 출력"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+</LinearLayout>

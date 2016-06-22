@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:textColor="#424242"
+        android:id="@+id/tv_qeustion_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="제목" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF5C6D"
+        android:layout_gravity="center_horizontal"
+         />
+
+    <TextView
+        android:textColor="#454545"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:gravity="end"
+        android:typeface="monospace"
+        android:id="@+id/tv_id_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="작성자아이디" />
+
+    <TextView
+        android:id="@+id/tv__question_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#424242"
+        />
+</LinearLayout>

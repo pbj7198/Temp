@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/menubackground"
+    android:orientation="vertical"
+    tools:context="com.example.gwon.javachip.Activity.ProblemActivity">
+
+    <TextView
+        android:textColor="#454545"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="fill_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="문제 풀기"
+        android:layout_weight="1.15"
+        android:id="@+id/tv_title"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/border"
+
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="0.6">
+
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/tv_problemcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="문제 내용" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:padding="10dp"
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg_numgrp">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/rb_num1"
+                    android:text="선택지1"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/rb_num2"
+                    android:text="선택지2"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="선택지3"
+                    android:id="@+id/rv_num3"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="선택지4"
+                    android:id="@+id/rv_num4"
+                    android:checked="false" />
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#FF5C6D"
+            android:textColor="#ffffff"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="cancle"
+            android:id="@+id/bt_problem_cancle" />
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#FF5C6D"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SELECT"
+            android:id="@+id/bt_select" />
+    </LinearLayout>
+
+</LinearLayout>

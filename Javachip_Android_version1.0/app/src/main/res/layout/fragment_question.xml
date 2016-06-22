@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/border"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="질문 게시판"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/lv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/border3" />
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/bt_problem"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF5C6D"
+        android:text="ASK"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bt_reflesh"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bt_problem"
+        android:layout_marginRight="5dp"
+        android:background="#FF5C6D"
+        android:text="REFRESH"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
